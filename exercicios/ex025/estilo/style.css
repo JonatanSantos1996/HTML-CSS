@@ -16,12 +16,8 @@ div {
     border-radius: 10px;
     box-shadow: 5px 3px 6px 1px rgba(0, 0, 0, 0.395);
     display: block;
-    height: 400px;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    top: 50%;
-    width: 400px;
+    height: 600px;
+    margin: auto;
+    width: 600px;
 
 }
