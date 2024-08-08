@@ -5,19 +5,31 @@
 }
 
 body {
-    background-color: rgba(125, 177, 198, 0.841);
+    background-color: rgb(38, 0, 255);
    
 }
 
 div {
-    background-color: rgb(111, 111, 255);
+    background-color: rgb(255, 255, 255);
     background-position: center;
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 5px 3px 6px 1px rgba(0, 0, 0, 0.395);
     display: block;
-    height: 600px;
+    height: 500px;
     margin: auto;
-    width: 600px;
+    width: 500px;
+}
 
+h1 {
+    text-align: center;
+}
+
+p {
+    margin: 5%;
+    text-align: justify;
+}
+
+p#miau {
+    text-align: center;
 }
