@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="../ex009/favicon.ico" type="image/x-icon">
+    <title>Formulário</title>
+</head>
+<body>
+    <div>
+        <h1>Exemplo de formulário</h1>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <p>
+                <label for="inum">Número</label>
+                <input type="range" name="num" id="inum" max="10" min="0" value="5"
+                oninput="ival.innerHTML = Number(inum.value)">
+                <output id="ival">5</output>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </div>
+</body>
+</html>
