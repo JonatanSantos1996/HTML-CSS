@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+          <title>flaxible box</title>
+          <style>
+                    div.conteiner {
+                        align-items: center;/*aliamento do content na vertical*/
+                        background-color: rgba(252, 0, 0, 0.336);/*cor de fundo da caixa*/
+                        border-radius: 10px;/*para arendondar os cantos da caixa*/
+                        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.493);/*para sobreamento da caixa*/
+                        display: flex; /*so o pai recebe esta configuração*/
+                        flex-flow: row nowrap;/*direção das caixas*/
+                        height: 600px;/*tamanho vertical da caixa*/
+                        justify-content: space-around;/*alinhamento do content na horizontal*/
+                        margin: auto;/*para centralizar a caixa*/
+                        width: 600px;/*tamanho horizontal da caixa*/
+                    }
+                    div.item {
+                              background-color: lightblue;/*cor de fundo*/
+                              border: 1px solid black;/*cor da borda*/
+                              border-radius: 10px;/*para arendondar os cantos da caixa*/
+                              box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.493);/*para sobreamento da caixa*/
+                              height: 60px;/*tamanho vertical da caixa*/
+                              text-align: center;/*para deixar o texto no centro*/
+                              width: 60px;/*tamanho horizontal da caixa*/
+                    }
+                
+          </style>
+</head>
+<body>
+      <div class="conteiner">
+          <div class="item">A</div>
+          <div class="item">B</div>
+          <div class="item">C</div>
+          <div class="item">D</div>
+          <div class="item">E</div>
+          <div class="item">F</div>
+          <div class="item">G</div>
+      </div>  
+</body>
+</html>
