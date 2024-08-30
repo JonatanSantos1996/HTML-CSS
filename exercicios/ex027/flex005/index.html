@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+          <title>Flexbox centralizado</title>
+          <style>
+                    * {
+                              box-sizing: border-box;/*A largura e altura para um elemento encluem o padding e a borda */
+                              margin: 0px;/*Usar margin: 0px; é uma maneira eficaz de eliminar qualquer espaço externo ao redor de um elemento, permitindo um layout mais compacto e controlado. Isso é especialmente útil para criar designs minimalistas ou para ajustar o layout de forma precisa em relação a outros elementos na página.*/
+                              padding: 0px;/*Usar padding: 0px; é útil quando você deseja eliminar qualquer espaço interno ao redor do conteúdo de um elemento, garantindo que o conteúdo fique imediatamente próximo à borda do elemento, sem qualquer espaço adicional.*/
+                    }
+
+                    body {
+                              background-color: rgba(0, 0, 0, 0.692);
+                    }
+
+                    main {
+                              align-items: center;/*align-items: center; é uma propriedade eficaz para centralizar verticalmente os itens dentro de um contêiner flexível ou de grade, tornando a criação de layouts centralizados mais intuitiva e fácil.*/
+                              background-color: rgb(128, 128, 128);
+                              display: flex;/*O display: flex; é uma propriedade CSS que transforma um contêiner em um contêiner flexível (flex container) e permite que seus itens filhos (flex items) sejam organizados de maneira mais eficiente e dinâmica. O modelo Flexbox é projetado para distribuir espaço ao longo de um eixo (horizontal ou vertical) e alinhar itens de maneira mais intuitiva do que usando outros métodos de layout, como o float ou o display: inline-block*/
+                              flex-flow: row nowrap;/*São dois comandos em um, (row) define a direção principal dos itens como linha horizontal, (nowrap) define que os itens não devem quebrar em uma nova linha */
+                              height: 100vh;
+                              justify-content: center;/*justify-content: center; é extremamente útil para centralizar itens em layouts flexíveis ou de grade, proporcionando uma forma simples e eficaz de organizar o conteúdo no eixo principal do contêiner.*/
+                              width: 100vw;
+                    }
+
+                    section {
+                              background-color: rgba(49, 49, 182, 0.747);
+                              height: 300px;
+                              width: 150px;
+
+                    }
+          </style>
+</head>
+<body>
+          <main>
+                    <section>
+                              <h1>Tela de login</h1>
+                    </section>
+          </main>
+          
+</body>
+</html>
