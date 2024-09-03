@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+          <title>flaxible box</title>
+          <style>
+                    div.conteiner {
+                              background-color: darkred;
+                              display: flex; /*so o pai recebe esta configuracao */
+                              flex-flow: row nowrap;
+                    }
+                    div.item {
+                              background-color: lightblue;
+                              border: 1px solid black;
+                              flex-basis: 150px;/*flex-basis: 150px; é usado para definir o tamanho base de um item dentro de um contêiner flexível. É particularmente útil para criar layouts responsivos onde os elementos precisam ter um tamanho inicial específico, mas ainda serem flexíveis para se adaptar ao espaço disponível.
+                              Ajuste Automático: Dependendo do espaço disponível no contêiner e do valor de outras propriedades Flexbox (como flex-grow e flex-shrink), o tamanho final dos itens pode aumentar ou diminuir, mas eles começarão com 150 pixels.*/
+                              text-align: center;
+                    }
+                
+          </style>
+</head>
+<body>
+      <div class="conteiner">
+          <div class="item">A</div>
+          <div class="item">Outro conteúdo</div>
+          <div class="item">C</div>
+          <div class="item">Conteúdo um pouco maior</div>
+          <div class="item">E</div>
+          <div class="item">Conteúdo maior ainda, que vai ocupar mais espaço. </div>
+          <div class="item">G</div>
+      </div>  
+</body>
+</html>
