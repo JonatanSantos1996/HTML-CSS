@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+          <title>flaxible box</title>
+          <style>
+                    div.conteiner {
+                              background-color: darkred;
+                              display: flex; /*so o pai recebe esta configuracao */
+                              flex-flow: row nowrap;
+                    }
+                    div.item {
+                              background-color: lightblue;
+                              border: 1px solid black;
+                              flex-basis: 200px;
+                              flex-grow: 1;/*(para crescer)flex-grow: 1; permite que um item cresça proporcionalmente para ocupar o espaço disponível dentro de um contêiner flexível.
+                              Proporcionalidade: O valor 1 indica que o item crescerá de forma igual aos outros itens que também têm flex-grow definido com o mesmo valor. Se um item tivesse flex-grow: 2;, ele cresceria duas vezes mais que um item com flex-grow: 1;.
+                              Essa propriedade é útil para criar layouts responsivos onde os itens precisam se ajustar dinamicamente ao espaço extra no contêiner.*/
+                              flex-shrink: 1;/*(para diminuir)flex-shrink: 1; permite que um item encolha quando não há espaço suficiente no contêiner flexível.
+                              Proporcionalidade: O valor 1 indica que todos os itens com flex-shrink: 1; encolherão na mesma proporção. Se o valor fosse maior (por exemplo, flex-shrink: 2;), o item encolheria duas vezes mais do que aqueles com flex-shrink: 1;.
+                              Essa propriedade é útil para criar layouts flexíveis e responsivos, onde os itens devem se ajustar dinamicamente ao espaço disponível.*/
+                              text-align: center;
+                    }
+                
+          </style>
+</head>
+<body>
+      <div class="conteiner">
+          <div class="item">A</div>
+          <div class="item">B</div>
+          <div class="item">C</div>
+</body>
+</html>
