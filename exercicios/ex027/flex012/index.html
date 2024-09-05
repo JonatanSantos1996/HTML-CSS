@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+          <title>flaxible box</title>
+          <style>
+                    div.conteiner {
+                              background-color: darkred;
+                              display: flex; /*so o pai recebe esta configuracao */
+                              flex-flow: row nowrap;
+                    }
+                    div.item {
+                              background-color: lightblue;
+                              border: 1px solid black;
+                              text-align: center;
+                    }
+                    div#a {
+                        /*flex-grow: 2;
+                        flex-shrink: 1;
+                        flex-basis:250px*/
+                        flex: 2 1 250px;/*simplificado*/
+                    }
+
+                    div#b {
+                        /*flex-grow: 4;
+                        flex-shrink: 2;
+                        flex-basis:250px;*/
+                        flex: 4 2 150px;/*simplificado*/
+
+                    }
+
+                    div#c {
+                        /*flex-grow: 0;
+                        flex-shrink: 1;
+                        flex-basis:250px*/
+                        flex: 0 1 auto;/*simplificado*/
+                    }
+                    /*flex:0 1 auto; o mesmo que > flex:initial;
+                      flex:0 0 auto; o mesmo que > flex::none;
+                      flex:1 1 auto; o mesmo que > flex:auto;
+                      flex:3 1 auto; o mesmo que > flex:3;*/
+          </style>
+</head>
+<body>
+      <div class="conteiner">
+          <div class="item" id="a">A</div>
+          <div class="item" id="b">B</div>
+          <div class="item" id="c">C</div>
+</body>
+</html>
